@@ -25,6 +25,7 @@ h1,h2,h3,h4,h5,h6{
     font-size: 14px;
     font-weight: 400;
     font-family:Poppins; 
+    transition: all 0.5s;
 }
 .nav-link.active{
   border-bottom: 1px solid #FFFFFF;
@@ -266,19 +267,21 @@ h1,h2,h3,h4,h5,h6{
                      Portfolio 
 -------------------------------------------------------- */
 .nav-pills .nav-link{
-  margin: 0 15px;
+  margin: 0 2px;
     color: #222;
     font-weight: 700;
     font-size: 16px;
+    background-color: unset !important;
+  border-radius: unset !important;
+}
+.nav-pills .nav-link.active{
+  color:#222 !important ;
+  border-bottom: 1px solid #1C1C1C;
+}
+.nav-pills .nav-link:hover {
+  border-bottom: 1px solid #1C1C1C;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-
- color: var(--main-color);
- border-bottom: 2px  solid var(--main-color);
- background-color: unset;
- border-radius: unset;
-}
 .item-img-overlay{
   background: rgba(255, 255, 255, 0.95);
   opacity: 0;
