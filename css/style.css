@@ -1,0 +1,511 @@
+/* -------------------------------------------------------
+                     Global 
+-------------------------------------------------------- */
+html{
+    
+    scroll-behavior: smooth;
+    scroll-padding-top: 57px;
+}
+:root{
+    --main-color:#1C1C1C;
+    --secondary-color:#788485;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: #FFFFFF;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+/* -------------------------------------------------------
+                     Navbar 
+-------------------------------------------------------- */
+.my-nav .nav-link{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 400;
+    font-family:Poppins; 
+}
+.nav-link.active{
+  border-bottom: 1px solid #FFFFFF;
+  color: #FFFFFF !important;
+}
+.nav-link:hover{
+  border-bottom: 1px solid #FFFFFF;
+}
+
+.my-nav{
+  background-color:rgba(0, 0, 0, 0.6); 
+}
+.my-nav .nav-item{
+    padding: 0 0 20px 30px;
+}
+
+.my-nav .navbar-brand{
+    color: #FFFFFF;
+    text-transform:uppercase;
+    font-family:Montserrat;
+    font-size: 18px;
+    font-weight: 800;
+}
+.navbar-toggler{
+    background-color: #f7f7f7 !important; 
+}
+@media screen and (max-width: 767px) {
+  .my-nav .navbar-collapse{
+    text-align: center;
+      border: none;
+      border-top: 1px solid rgba(12, 12, 12, 0.04);
+      margin-top: 5px;
+      padding-bottom: 15px;
+  }
+  }
+
+
+
+/* -------------------------------------------------------
+                     Header 
+-------------------------------------------------------- */
+
+.header{
+    background-image:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6))  ,   url(../img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+ }
+ .header h5{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+ }
+ .header h1{
+    font-size: 44px;
+    font-weight: 200;
+ }
+ .header h1 span{
+    font-size: 44px;
+    font-weight: 400;
+ }
+ .header .caption .social-icon {
+    margin-top: 35px;
+  }
+  .header .caption .social-icon span {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 14px;
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 0 0  8px;
+  }
+   a{
+   color: black;
+    text-decoration: none;
+  }
+/* -------------------------------------------------------
+                     Hero 
+                     -------------------------------------------------------- */
+  .hero .hero-img:after {
+    content: "";
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 0px;
+    bottom: -30px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat;
+    z-index: -1;
+  }
+  .hero .hero-img {
+    padding: 0 0 0 30px;
+    position: relative;
+  }
+  .hero .content h3 {
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  .hero .content .sub-title {
+    color: #999;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+   margin-top: 0;
+    font-size: 14px;
+    font-family:Poppins;
+}
+  .hero .content p{
+    line-height: 1.6;
+    margin-top: 20px;
+    font-size: 15px;
+    color: #748182;
+  }
+  .skills {
+    margin-top: 30px;
+  }
+   .skills .item {
+    margin-bottom: 30px;
+  }
+  .hero .skills h6 {
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+    .skills-progress {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    position: relative;
+  }
+ .skills-progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    transition: all 1s;
+   
+ }
+    .skills-progress span:after {
+    content: attr(data-value);
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    font-size: 11px;
+    color: #fff;
+  }
+  .hero .buton {
+    margin-top: 20px;
+}
+  .buton-bg {
+    background: #1c1c1c;
+    color: #eee;
+    
+  }
+  .buton-1,.buton-2 {
+    padding: 10px 30px;
+    border: 1px solid #1c1c1c;
+    border-radius: 5px;
+    font-size: 13px;
+    transition: all 0.5s;
+}
+.hero .buton-1:hover{
+  background-color: #FFFFFF;
+  color:#1C1C1C;
+}
+.hero .buton-2:hover:hover{
+  background-color:#1C1C1C;
+  color:#FFFFFF;
+}
+/* -------------------------------------------------------
+                     Services 
+-------------------------------------------------------- */
+.section-head h3{
+  font-size: 40px;
+  font-weight: 900;
+  position: relative;
+    display: inline-block;
+    z-index: 4;
+    margin-bottom: 50px;
+}
+.section-head h3::after{
+  content: "";
+    width: 90%;
+    height: 80%;
+    position: absolute;
+    left: 10px;
+    bottom: -35px;
+    background-image: url(../img/dots.png);
+    background-repeat: repeat-x;
+    z-index: -1;
+}
+.services{
+  background-color: #F7F7F7;
+}
+.services .item {
+  padding: 50px 20px;
+  background: #fff;
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+.services .item .icon i {
+  font-size: 30px;
+  margin-bottom: 20px;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.services .item:hover .icon i {
+  background: #1c1c1c;
+  color: #eee;
+}
+.services .item h6 {
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-size: 18px;
+}
+.services .item p {
+  word-spacing: 2px;
+  font-size: 14px;
+}
+/* -------------------------------------------------------
+                     Portfolio 
+-------------------------------------------------------- */
+.nav-pills .nav-link{
+  margin: 0 15px;
+    color: #222;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+
+ color: var(--main-color);
+ border-bottom: 2px  solid var(--main-color);
+ background-color: unset;
+ border-radius: unset;
+}
+.item-img-overlay{
+  background: rgba(255, 255, 255, 0.95);
+  opacity: 0;
+  transition: all 0.5s;
+    z-index: 2;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+}
+.work-img:hover .item-img-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+ .work-img .icon i {
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  border-radius: 50%;
+  border: 1px solid #111;
+  background: #111;
+  color: #eee;
+}
+.item-img-overlay .icon i:hover {
+  background: transparent;
+  color: #000;
+}
+/* -------------------------------------------------------
+                     Clients 
+-------------------------------------------------------- */
+.testimonials .eng{
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 15px;
+}
+.testimonials{
+  background-color: #F7F7F7;
+}
+.carousel-indicators{
+  bottom: -60px;
+}
+.testimonials .carousel-indicators button{
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  color: #869791;
+  background-color: #869791;
+}
+.carousel-item h6{
+  font-size: 16px;
+    font-weight: 600;
+    margin: 30px 0 5px;
+    color:#343434;
+}
+.carousel-item p{
+  font-size: 15px;
+  font-family:Poppins;
+  color:#748182;
+}
+.carousel-item span{
+  font-size: 12px;
+  font-weight: 600;
+  color:#888888;
+  font-family: Poppins;
+}
+/* -------------------------------------------------------
+                     Numbers 
+-------------------------------------------------------- */
+.numbers .icon {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+.numbers h3 {
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+.numbers p {
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: 
+  #748182;
+}
+/* -------------------------------------------------------
+                     Blog 
+-------------------------------------------------------- */
+.single-team {
+  background-color: rgba(52, 52, 52, .8);
+  margin-bottom: 10px;
+}
+
+.img-area .social-overlay {
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  inset:5px;
+  text-align: center; 
+  opacity: 0;
+  transition: all 0.4s ease 0s;
+  transform: rotateY(180deg) scale(0.5, 0.5);
+}
+
+.img-area .social-overlay i {
+  border: 1px solid #000;
+    color:#F7F7F7;
+    background-color:var(--main-color);
+    display: block;
+    font-size: 20px;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 5px; 
+}
+.img-area .social-overlay ul {
+  text-align: center;
+  position: relative;
+  bottom: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-overlay i:hover{
+  background-color:#FFFFFF;
+  color: var(--main-color);
+  height: 35px;
+  width: 40px;
+  border-radius: 50%;
+  line-height: 40px;
+  border: 1px solid #000;
+}
+.img-area:hover .social-overlay{
+  opacity: 1;
+  transform: translateY(0);
+ 
+}
+.list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+.img-text{
+  padding: 25px;
+  background-color: #5B5B5B;
+}
+.img-text h4{
+  font-size: 25px;
+  font-weight:500;
+  font-family:Montserrat;
+  color:  #FFFFFF;
+}
+.img-text h5{
+  font-size: 20px;
+  font-weight:700;
+  font-family:Montserrat;
+  color:  #FFFFFF;
+  text-transform: uppercase;
+}
+/* -------------------------------------------------------
+                     Contact 
+-------------------------------------------------------- */
+.content .item{
+  margin-bottom: 30px;
+  margin-right: 20px;
+   margin-left: 15px;
+}
+
+.content .item .icon i{
+  font-size: 25px;
+  margin-bottom: 15px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  background: #f4f4f4;
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+.item:hover .icon i {
+  background: #1c1c1c;
+  color: #eee;
+}
+.content .item h6{
+  font-weight: 700;
+    margin-bottom: 10px;
+}
+.content .item p{
+  line-height: 1.6;
+    margin: 0;
+    font-size: 15px;
+    color: #748182;
+}
+.form-group input{
+  width: 100%;
+  border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+.form-group textarea{
+  height: 160px;
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+    margin-top: 15px;
+}
+.buton {
+  padding: 10px 40px;
+  border: 1px solid #1c1c1c;
+  border-radius: 5px;
+  font-size: 13px;
+  transition: all 0.5s;
+  margin-top: 10px;
+}
+/* -------------------------------------------------------
+                     Footer 
+-------------------------------------------------------- */
+footer {
+  background: #1c1c1c;
+  padding: 30px;
+}
+footer p {
+  font-size: 13px;
+  word-spacing: 2px;
+  color: #F7F7F7;
+}
+
+
